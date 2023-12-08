@@ -30,6 +30,18 @@ body {
     height: auto;
   }
 }
+
+.navlogo {
+  height: 100%;
+  background: linear-gradient(93.51deg, #9b51e0 2.84%, #3081ed 99.18%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+}
+
 .header-content-div {
   max-width: 95rem;
   width: auto;
@@ -55,7 +67,6 @@ nav {
   float: right;
   font-size: 1.6rem;
   font-weight: 500;
-  padding: 1.5rem 0;
 }
 @media (max-width: 800px) {
   nav {
@@ -325,12 +336,16 @@ footer a {
 }
 
 .gallery {
+  flex: 1;
   --g: 8px;
-  --s: 200px;
+  --s: 300px;
   display: grid;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
 }
 .gallery > img {
+  margin-top: 20px;
   grid-area: 1/1;
   width: var(--s);
   aspect-ratio: 1;
